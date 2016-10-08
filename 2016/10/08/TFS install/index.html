@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>TFS install | HaiCoolBigData</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="TFS install">
+<meta property="og:type" content="article">
+<meta property="og:title" content="TFS install">
+<meta property="og:url" content="http://nilvxingren.github.io/2016/10/08/TFS install/index.html">
+<meta property="og:site_name" content="HaiCoolBigData">
+<meta property="og:description" content="TFS install">
+<meta property="og:updated_time" content="2016-10-08T14:41:48.891Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="TFS install">
+<meta name="twitter:description" content="TFS install">
+  
+    <link rel="alternative" href="/atom.xml" title="HaiCoolBigData" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/img/favicon.png">
+  
+  
+      <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+  
+      <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  
+  <!-- 加载特效 -->
+    <script src="/js/pace.js"></script>
+    <link href="/css/pace/pace-theme-flash.css" rel="stylesheet" />
+  <script>
+      var yiliaConfig = {
+          rootUrl: '/',
+          fancybox: true,
+          animate: true,
+          isHome: false,
+          isPost: true,
+          isArchive: false,
+          isTag: false,
+          isCategory: false,
+          open_in_new: false
+      }
+  </script>
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            
+            <img lazy-src="/img/avatar.jpg" class="js-avatar">
+            
+        </a>
+
+        <hgroup>
+          <h1 class="header-author"><a href="/" title="Hi Mate">HaiCool</a></h1>
+        </hgroup>
+
+        
+        
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/">主页</a></li>
+                        
+                            <li><a href="/archives/">所有文章</a></li>
+                        
+                            <li><a href="/tags/">标签云</a></li>
+                        
+                            <li><a href="/about/">关于我</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fl mail" target="_blank" href="#" title="mail">mail</a>
+                            
+                                <a class="fl github" target="_blank" href="#" title="github">github</a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <a href="/tags/TFS/" style="font-size: 10px;">TFS</a>
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://MOxFIVE.github.io/">MOxFIVE</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="Me">HaiCool</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                
+                    <img lazy-src="/img/avatar.jpg" class="js-avatar">
+                
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="Me">HaiCool</a></h1>
+            </hgroup>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/">主页</a></li>
+                
+                    <li><a href="/archives/">所有文章</a></li>
+                
+                    <li><a href="/tags/">标签云</a></li>
+                
+                    <li><a href="/about/">关于我</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a class="mail" target="_blank" href="#" title="mail">mail</a>
+                    
+                        <a class="github" target="_blank" href="#" title="github">github</a>
+                    
+                </div>
+            </nav>
+        </header>                
+    </div>
+</nav>
+      <div class="body-wrap"><article id="post-TFS install" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/10/08/TFS install/" class="article-date">
+      <time datetime="2016-10-08T14:41:48.895Z" itemprop="datePublished">2016-10-08</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      TFS install
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TFS/">TFS</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p> TFS install</p>
+<ul>
+<li><a id="more"></a>
+<h2 id="1-硬盘分区"><a href="#1-硬盘分区" class="headerlink" title="1. 硬盘分区"></a>1. 硬盘分区</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">parted /dev/sdb</span><br><span class="line">print</span><br><span class="line">mklabel gpt</span><br><span class="line">mkpart primary 1 -1</span><br><span class="line">quit</span><br><span class="line">mkfs.ext4 /dev/sdb1</span><br><span class="line">e2label /dev/sdb1  /data/disk1</span><br><span class="line"></span><br><span class="line">parted /dev/sdc</span><br><span class="line">print</span><br><span class="line">mklabel gpt</span><br><span class="line">mkpart primary 1 -1</span><br><span class="line">quit</span><br><span class="line">mkfs.ext4 /dev/sdc1</span><br><span class="line">e2label /dev/sdc1  /data/disk2</span><br><span class="line"></span><br><span class="line">parted /dev/sda</span><br><span class="line">print</span><br><span class="line">mklabel gpt</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<blockquote>
+<p>这里系统盘会占用一些空间，从300GB开始</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">mkpart primary 300GB 6001GB</span><br><span class="line">quit</span><br><span class="line">mkfs.ext4 /dev/sda4</span><br><span class="line">e2label /dev/sda4  /data/disk3</span><br><span class="line"></span><br><span class="line">vim /etc/fstab</span><br><span class="line">加入：</span><br><span class="line">LABEL=/data/disk1            /data/disk1                   ext4     defaults         1 2</span><br><span class="line">LABEL=/data/disk2            /data/disk2                   ext4     defaults         1 2</span><br><span class="line">LABEL=/data/disk3            /data/disk3                   ext4     defaults         1 2</span><br><span class="line"></span><br><span class="line"> mount -t ext4 /dev/sda4 /data/disk1</span><br><span class="line"> mount -t ext4 /dev/sdb1 /data/disk2</span><br><span class="line"> mount -t ext4 /dev/sdb2 /data/disk3</span><br></pre></td></tr></table></figure>
+<h2 id="2-TFS-格式化数据盘"><a href="#2-TFS-格式化数据盘" class="headerlink" title="2. TFS 格式化数据盘"></a>2. TFS 格式化数据盘</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./script/stfs format 1-3</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>由于硬盘比较大 耗时会比较长</p>
+</blockquote>
+<p>格式化成功后，会发现/data/disk1，/data/disk2， /data/disk3 下面产生了一堆以数字命名的文件（1-n），因为TFS的block文件是以数字命名的，从1开始递增编号。</p>
+<h2 id="3-启动NameServer"><a href="#3-启动NameServer" class="headerlink" title="3. 启动NameServer"></a>3. 启动NameServer</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./bin/nameserver -f conf/ns.conf -d</span><br></pre></td></tr></table></figure>
+<h2 id="4-启动DataServer"><a href="#4-启动DataServer" class="headerlink" title="4. 启动DataServer"></a>4. 启动DataServer</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">./bin/dataserver -f conf/ds.conf -i 1 -d</span><br><span class="line">./bin/dataserver -f conf/ds.conf -i 2 -d</span><br><span class="line">./bin/dataserver -f conf/ds.conf -i 3 -d</span><br></pre></td></tr></table></figure>
+<h2 id="5-测试"><a href="#5-测试" class="headerlink" title="5. 测试"></a>5. 测试</h2><p><code>./bin/tfstool -s  33.73.192.37:8100 -i &quot;put testfile&quot;</code></p>
+<p>将本地testfile存入tfs， -s 指定nameserver的ip:port。 如果成功，会打印 put testfile =&gt; T1QEBXXDpXXXXXXXXX success. 类似的消息，其中T开头一串字符是TFS为这个文件生成的文件名，一共18个字符；要想从TFS取出该文件时，需要指定该文件名。</p>
+<p><code>./bin/tfstoo -s 33.73.192.371:8100 -i &quot;get T1QEBXXDpXXXXXXXXX localfile&quot;</code></p>
+<p>从TFS读取T1QEBXXDpXXXXXXXXX，存储到本地localfile中；如果成功，会打印fetch T1QEBXXDpXXXXXXXXX =&gt; localfile success.类似的消息。</p>
+<h2 id="6-通过浏览器访问"><a href="#6-通过浏览器访问" class="headerlink" title="6. 通过浏览器访问"></a>6. 通过浏览器访问</h2><ul>
+<li>防火墙<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">firewall-cmd --permanent --add-port=7500/tcp</span><br><span class="line">systemctl restart firewalld.service</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><code>http://33.73.192.37:7500/v1/tfs/T1DyhTByJT1RCvBVdK</code></p>
+<h2 id="7-TODO"><a href="#7-TODO" class="headerlink" title="7. TODO"></a>7. TODO</h2><ul>
+<li>[ ] TFS Nameserver HA配置</li>
+</ul>
+<h2 id="8-参考"><a href="#8-参考" class="headerlink" title="8. 参考"></a>8. 参考</h2><ul>
+<li><a href="https://github.com/alibaba/tfs/blob/master/DEPLOY.md" target="_blank" rel="external">官方文档</a></li>
+<li><a href="http://blog.chinaunix.net/uid-20196318-id-4133948.html" target="_blank" rel="external">TFS Nameserver HA配置</a></li>
+<li><a href="https://yq.aliyun.com/articles/54800?commentId=3066" target="_blank" rel="external">云栖社区 TFS资料</a></li>
+<li><a href="https://github.com/alibaba/nginx-tfs" target="_blank" rel="external">Nginx-TFS</a></li>
+</ul>
+<h2 id="附"><a href="#附" class="headerlink" title="附"></a>附</h2><ol>
+<li><p>NS.conf</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">[public]</span><br><span class="line">log_size=1073741824</span><br><span class="line">log_num=64</span><br><span class="line">log_level=info</span><br><span class="line">task_max_queue_size=10240</span><br><span class="line">emergency_replicate_queue=5 # 网上的资料没看到这个配置，不加的话会一直打印日志</span><br><span class="line">work_dir=/home/tfs/tfs</span><br><span class="line">dev_name=enp1s0f0 # server使用的网卡名，需要修改为你机器的某个网卡名</span><br><span class="line">ip_addr=33.73.192.37 # server服务的ip地址，必须是dev_name网卡上的IP地址，如果NS配置了HA，此处配置vip</span><br><span class="line">port=8100  #server服务的端口号，根据实际环境修改, 该配置项建议所有DS保持相同</span><br><span class="line"></span><br><span class="line">[nameserver]</span><br><span class="line">safe_mode_time=360  #seconds NS启动后的保护时间，在该时间内，NS不会构建任何复制、迁移等任务</span><br><span class="line">ip_addr_list=33.73.192.37|192.168.0.254 #如果使用HA,则配置vip对应的两个节点的实际ip；如果没有使用HA,第一项配置与ip_addr相同，第二项可以随便配置一个无效的地址(如本例中192.168.0.254是无效的IP地址）</span><br><span class="line">group_mask=255.255.255.224  #用于区分机架的子网掩码，可根据实际网络环境修改。如果你配置为255.255.255.255，那么任意两个ip不同的机器都被认为在不同的机架；如果你配置为255.255.255.0， 那么192.168.0.x与192.168.0.y将被认为在同一个机架，依次类推；TFS数据块的多个副本不能分布在同一个机架内，以提高可靠性。</span><br><span class="line">max_replication=1 # 副本数，机器数必须大于副本数，单机环境测试，只能设置为1，否则不能存数据</span><br><span class="line">cluster_id=1  #集群ID，存文件后生成的文件名会包含这个ID，建议不修改</span><br><span class="line">block_max_size=75497472  #Bytes，保持与dataserver下mainblock_size配置一致，建议不修改</span><br><span class="line">repl_wait_time=180 # seconds 当NS检测到block丢失时，等待多长时间开始复制block，可根据实际情况修改</span><br><span class="line">compact_delete_ratio=10 # 代表10%，当NS发现block中文件删除比例超出该比例，开始对block进行压缩，回收删除文件的存储空间</span><br><span class="line">compact_hour_range=1~5  #代表1点~5点，NS只会在1-50点间进行block压缩，建议设置为访问低峰时间段</span><br><span class="line">balance_percent=0.05 # 代表5%，负载均衡时，当DS存储容量超出平均值5%时，就会被选择为数据迁移源，低于平均值5%，就会被选为数据迁移目标</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>DS.conf</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">[public]</span><br><span class="line">log_size=1073741824</span><br><span class="line">log_num=64</span><br><span class="line">log_level=info</span><br><span class="line">task_max_queue_size=10240</span><br><span class="line">work_dir=/home/tfs/tfs</span><br><span class="line">dev_name=enp1s0f0 # server使用的网卡名，需要修改为你机器的某个网卡名</span><br><span class="line">ip_addr=33.73.192.37 # server服务的ip地址，必须是dev_name网卡上的IP地址，如果NS配置了HA，此处配置vip</span><br><span class="line">port=8200  #server服务的端口号，根据实际环境修改, 该配置项建议所有DS保持相同</span><br><span class="line"></span><br><span class="line">[dataserver]</span><br><span class="line">ip_addr=33.73.192.37 # NS的ip地址，如果配置了HA，则为vip</span><br><span class="line">ip_addr_list=33.73.192.37 #|192.168.0.254 # 与nameserver区域的ip_addr_list配置保持一致(254这个如果保留会一直打印错误日志)</span><br><span class="line">port=8100 # NS服务监听的端口</span><br><span class="line">heart_interval=2  #seconds，DS向NS发送心跳的时间间隔，可根据实际环境修改</span><br><span class="line">mount_name=/data/disk  #DS数据目录，如果机器上有2块盘，则它们应该挂载在/data/disk1、/data/disk2，依次类推</span><br><span class="line">mount_maxsize=5205042452 # KB, 磁盘实际使用的空间，应该小于df命令Available一项的输出</span><br><span class="line">base_filesystem_type = 1</span><br><span class="line"></span><br><span class="line">#超级块存存储的保留位置，default: 0</span><br><span class="line">superblock_reserve = 0</span><br><span class="line"></span><br><span class="line">#平均文件的大小, 单位(字节) 100K</span><br><span class="line">avg_file_size = 102400</span><br><span class="line"></span><br><span class="line">#主块的大小, 单位(字节)</span><br><span class="line">#每个数据存储块的大小</span><br><span class="line">mainblock_size = 7549747</span><br><span class="line"></span><br><span class="line">#扩展块的大小, 单位(字节)</span><br><span class="line">extblock_size = 419430</span><br><span class="line"></span><br><span class="line">#主块与扩展的比例</span><br><span class="line">block_ratio = 0.5</span><br><span class="line"></span><br><span class="line">#hash桶的比例</span><br><span class="line">hash_slot_ratio = 0.5</span><br><span class="line"></span><br><span class="line">ds_thread_count = 4</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Nginx-TFS部分配置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">http &#123;</span><br><span class="line">    include       mime.types;</span><br><span class="line">    default_type  application/octet-stream;</span><br><span class="line"></span><br><span class="line">    #log_format  main  &apos;$remote_addr - $remote_user [$time_local] &quot;$request&quot; &apos;</span><br><span class="line">    #                  &apos;$status $body_bytes_sent &quot;$http_referer&quot; &apos;</span><br><span class="line">    #                  &apos;&quot;$http_user_agent&quot; &quot;$http_x_forwarded_for&quot;&apos;;</span><br><span class="line"></span><br><span class="line">    #access_log  logs/access.log  main;</span><br><span class="line"></span><br><span class="line">    sendfile        on;</span><br><span class="line">    #tcp_nopush     on;</span><br><span class="line"></span><br><span class="line">    #keepalive_timeout  0;</span><br><span class="line">    keepalive_timeout  65;</span><br><span class="line"></span><br><span class="line">    gzip  on;</span><br><span class="line">    tfs_upstream tfs_ns &#123;</span><br><span class="line">        server 127.0.0.1:8100;</span><br><span class="line">       	type ns;</span><br><span class="line">    &#125;</span><br><span class="line">    server &#123;</span><br><span class="line">        listen       7500;</span><br><span class="line">       	server_name  localhost;</span><br><span class="line"></span><br><span class="line">       	tfs_keepalive max_cached=100 bucket_count=10;</span><br><span class="line">       	//cronolog 没装          tfs_log &quot;pipe:/usr/sbin/cronolog -p 30min /path/to/nginx/logs/cronolog/%Y/%m/%Y-%m-%d-%H-%M-tfs_access.log&quot;;</span><br><span class="line">        tfs_log &quot;/home/tfs/nginxtfs/install/nginx/logs/tfs_access.log&quot;;</span><br><span class="line">    	location = /favicon.ico &#123;</span><br><span class="line">      		log_not_found off;</span><br><span class="line">    	&#125;</span><br><span class="line">      	location / &#123;</span><br><span class="line">         	tfs_pass tfs://tfs_ns;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+
+      
+    </div>
+    
+  </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2016/10/08/TFS install/">TFS install</a></p>
+        <p><span>文章作者:</span><a href="/" title="访问 HaiCool 的个人博客">HaiCool</a></p>
+        <p><span>发布时间:</span>2016年10月08日 - 07时41分</p>
+        <p><span>最后更新:</span>2016年10月08日 - 07时41分</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2016/10/08/TFS install/" title="TFS install">http://nilvxingren.github.io/2016/10/08/TFS install/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://nilvxingren.github.io/2016/10/08/TFS install/　　作者: HaiCool" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script src="/js/clipboard.min.js"></script>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+<nav id="article-nav">
+  
+  
+    <a href="/2016/08/13/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-硬盘分区"><span class="toc-number">1.</span> <span class="toc-text">1. 硬盘分区</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-TFS-格式化数据盘"><span class="toc-number">2.</span> <span class="toc-text">2. TFS 格式化数据盘</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-启动NameServer"><span class="toc-number">3.</span> <span class="toc-text">3. 启动NameServer</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-启动DataServer"><span class="toc-number">4.</span> <span class="toc-text">4. 启动DataServer</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-测试"><span class="toc-number">5.</span> <span class="toc-text">5. 测试</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-通过浏览器访问"><span class="toc-number">6.</span> <span class="toc-text">6. 通过浏览器访问</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-TODO"><span class="toc-number">7.</span> <span class="toc-text">7. TODO</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-参考"><span class="toc-number">8.</span> <span class="toc-text">8. 参考</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#附"><span class="toc-number">9.</span> <span class="toc-text">附</span></a></li></ol>
+</div>
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+        }
+    })
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+    }
+</script>
+
+
+
+
+
+<div class="bdsharebuttonbox">
+	<a href="#" class="fx fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+	<a href="#" class="fx fa-weixin bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+	<a href="#" class="fx fa-qq bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+	<a href="#" class="fx fa-facebook-official bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+	<a href="#" class="fx fa-twitter bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+	<a href="#" class="fx fa-linkedin bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+	<a href="#" class="fx fa-files-o bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+</div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+
+
+
+    
+      <div class="duoshuo" id="comments">
+    <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="2016/10/08/TFS install/" data-title="TFS install" data-url="http://nilvxingren.github.io/2016/10/08/TFS install/"></div>
+    <!-- 多说评论框 end -->
+    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:"HaiCoolBigData"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = '/js/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+    <!-- 多说公共JS代码 end -->
+</div>
+
+    
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        
+            <a href="/2016/08/13/hello-world/" title="下一篇: Hello World">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/10/08/TFS install/">TFS install</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/13/hello-world/">Hello World</a></li></ul>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+    <script>
+        $(".post-list").addClass("toc-article");
+        $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+            }
+        })
+    </script>
+
+
+
+    <script>
+        
+    </script>
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                &copy; 2016 HaiCool
+            </div>
+            <div class="footer-right">
+                <a href="#" target="_blank">Hexo</a>  Theme spfk
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" >到访数: 
+                            <span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>, </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit">本页阅读量: 
+                            <span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+
+    </div>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var backgroundnum = 24;
+            var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+            $("#mobile-nav").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+            $(".left-col").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+        })
+    </script>
+
+
+
+
+
+<div class="scroll" id="scroll">
+    <a href="#"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    $(document).ready(function() {
+        if ($("#comments").length < 1) {
+            $("#scroll > a:nth-child(2)").hide();
+        };
+    })
+</script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+  <script language="javascript">
+    $(function() {
+        $("a[title]").each(function() {
+            var a = $(this);
+            var title = a.attr('title');
+            if (title == undefined || title == "") return;
+            a.data('title', title).removeAttr('title').hover(
+
+            function() {
+                var offset = a.offset();
+                $("<div id=\"anchortitlecontainer\"></div>").appendTo($("body")).html(title).css({
+                    top: offset.top - a.outerHeight() - 15,
+                    left: offset.left + a.outerWidth()/2 + 1
+                }).fadeIn(function() {
+                    var pop = $(this);
+                    setTimeout(function() {
+                        pop.remove();
+                    }, pop.text().length * 800);
+                });
+            }, function() {
+                $("#anchortitlecontainer").remove();
+            });
+        });
+    });
+</script>
+
+
+  </div>
+</body>
+</html>
